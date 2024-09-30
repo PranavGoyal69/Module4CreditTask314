@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Local Weather Service</h1>
+    <h2>Add Weather Reading</h2>
+    <form id="weatherForm">
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="number" id="temperature" placeholder="Temperature (°C)" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Latest Weather Reading</h2>
+    <button id="getLatest">Get Latest Reading</button>
+    <pre id="latestReading"></pre>
+
+    <h2>Get Weather by Location</h2>
+    <input type="text" id="searchLocation" placeholder="Enter Location">
+    <button id="getWeather">Get Weather</button>
+    <pre id="weatherResult"></pre>
+</body>
+</html>
